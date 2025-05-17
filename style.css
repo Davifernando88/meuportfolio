@@ -266,3 +266,19 @@ h1 {
         transform: translateY(-20px);
     }
 }
+
+@media (max-width: 700px) {
+
+
+
+
+    .projetoscaixa {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1rem;
+
+    }
+
+
+}
