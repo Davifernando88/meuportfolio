@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Fernando | portefolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <!-- <"UL - São tag para listas"> -->
+        <ul class="menu">
+            <!-- LI - tags para cada item da lista -->
+            <li><a class="menu-link" href="#inicio">Inicio</a></li>
+            <li> <a class="menu-link" href="#sobre">Sobre</a></li>
+            <li><a class="menu-link" href="#projetos">Projetos</a></li>
+            <li><a class="menu-link" href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN - e a tag principal -->
+    <main id="inicio" class="cabecalho">
+
+        <img src="img/1000229427.jpg" alt="foto davi Fernando" class="foto-perfil">
+        <h1>Davi Fernando</h1>
+        <p class="cabecalho-subtitulo">Desenvolvedor web fullstack</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá! Me chamo Davi Fernando Obalski Reis, tenho 32 anos, sou casado e pai de um filho. Após mais de 10
+                anos de experiência na indústria calçadista, decidi seguir minha paixão por tecnologia e embarcar em uma
+                nova jornada como desenvolvedor web full stack.
+
+                Sou formado em Técnico em Análise e Desenvolvimento de Sistemas e venho desenvolvendo projetos tanto
+                desktop quanto web, sempre buscando unir praticidade, usabilidade e organização.
+
+                Tenho conhecimento nas seguintes tecnologias:
+
+                Java
+
+                MySQL
+
+                JavaScript
+
+                HTML5
+
+                CSS3
+
+                Figma (para prototipação de interfaces)
+
+                Estou constantemente aprendendo e evoluindo, com o objetivo de criar soluções eficientes e bem
+                estruturadas. Meu foco é atuar com responsabilidade, dedicação e vontade de crescer na área da
+                tecnologia.
+
+                Atualmente, estou em busca de oportunidades que me permitam aplicar minhas habilidades, contribuir com
+                projetos reais e continuar aprendendo com profissionais da área.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus projetos</h2>
+        <div class="projetoscaixa">
+
+            <div class="projetos-card">
+                <img src="img/projeto1.png" alt="projeto1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+
+                    <h3 class="info-projetos">lfjlafjljlajflfajldj</h3>
+                    <p class="paragrafos-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nam
+                        sit
+                        commodi rem, placeat libero
+                        inventore quis temporibus similique vitae a possimus debitis incidunt tempora vero non eos.
+                        Officia,
+                        exercitationem</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+
+                <img src="img/projeto2.png" alt="projeto2" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">lfjlafjljlajflfajldj</h3>
+                    <p class="paragrafos-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nam
+                        sit
+                        commodi rem, placeat libero
+                        inventore quis temporibus similique vitae a possimus debitis incidunt tempora vero non eos.
+                        Officia,
+                        exercitationem</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="img/projeto3.png" alt="projeto3" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+
+                    <h3 class="info-projetos">lfjlafjljlajflfajldj</h3>
+                    <p class="paragrafos-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nam
+                        sit
+                        commodi rem, placeat libero
+                        inventore quis temporibus similique vitae a possimus debitis incidunt tempora vero non eos.
+                        Officia,
+                        exercitationem</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarwhats(event)">
+            <div class="campo-form">
+                <input id="nome" type="text" placeholder="Nome" class="campo-form">
+            </div>
+            <br>
+            <div class="grupo-form">
+                <textarea id="texto" class="campo-form" placeholder="Digite a sua menssagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar whatssap</button>
+        </form>
+
+    </section>
+    <script>
+
+        function enviarwhats(event) {
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('texto').value;
+            const telefone = '5551994229021';
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+            window.open(url, '_blank');
+        }
+
+    </script>
+</body>
+
+</html>
