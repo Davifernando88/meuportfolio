@@ -322,3 +322,31 @@ body {
     }
 
 }
+
+.footer-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+
+    inline-size: none;
+
+
+}
+
+
+
+.mesiganasredes {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.icone {
+    color: linear-gradient(90deg, var(--primaria), var(--secundaria));
+}
