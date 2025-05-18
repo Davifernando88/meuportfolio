@@ -77,8 +77,8 @@ body {
 }
 
 .foto-perfil {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 4px solid var(--vidro);
@@ -93,7 +93,7 @@ body {
     flex-direction: column;
 }
 
-h1 {
+.nome {
     font-size: 3.5rem;
     color: var(--primaria);
     font-weight: bold;
@@ -267,9 +267,7 @@ h1 {
     }
 }
 
-@media (max-width: 700px) {
-
-
+@media (max-width: 421px) {
 
 
     .projetoscaixa {
@@ -280,5 +278,33 @@ h1 {
 
     }
 
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .nome {
+        font-size: 2.50rem;
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:331px) {
+    .projetos-titulo {
+        font-size: 2rem;
+
+    }
+
+}
+
+@media (max-width:391px) {
+    .contatos-titulo {
+
+        font-size: 2rem;
+
+    }
 
 }
