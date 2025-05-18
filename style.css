@@ -91,6 +91,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .nome {
@@ -290,12 +291,25 @@ body {
     .cabecalho-subtitulo {
         font-size: 1rem;
     }
+
+    .cabecalho {
+        margin-top: 90px;
+
+    }
 }
 
 @media (max-width:331px) {
     .projetos-titulo {
         font-size: 2rem;
 
+    }
+
+    .sobre-titulo {
+        font-size: 2rem;
+    }
+
+    .projetos-titulo {
+        font-size: 2rem;
     }
 
 }
