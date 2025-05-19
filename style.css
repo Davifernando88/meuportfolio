@@ -325,7 +325,8 @@ body {
 
 .footer-text {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
+    font-size: 0.7rem;
 }
 
 .redes {
@@ -342,11 +343,19 @@ body {
 
 
 .mesiganasredes {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     font-weight: bold;
     text-align: center;
 }
 
+
+
 .icone {
     color: linear-gradient(90deg, var(--primaria), var(--secundaria));
+
+}
+
+.icone i {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
